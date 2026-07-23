@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* 基底色：霜月清冷 + 行商暖金 */
+  --c-bg: #f4f1ea;
+  --c-surface: #ffffff;
+  --c-border: #d4cfc2;
+  --c-text: #2c2c2c;
+  --c-text-muted: #8a8478;
+  --c-primary: #5a6b8a;
+  --c-accent: #b8954a;
+  --c-accent-dark: #8a6d2b;
+  /* 状态语义色 */
+  --c-safe: #5a9a5a;
+  --c-warn: #c9a84c;
+  --c-danger: #b5544a;
+  --c-info: #7ab8e0;
+  --font-body: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
