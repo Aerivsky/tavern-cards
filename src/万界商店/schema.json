@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前所在小世界": {
+          "default": "扶摇界",
+          "type": "string"
+        },
+        "当前场景": {
+          "default": "",
+          "type": "string"
+        },
+        "行商阶段": {
+          "default": "交涉通行证",
+          "type": "string",
+          "enum": [
+            "交涉通行证",
+            "融入",
+            "行商",
+            "离场",
+            "非法闯入"
+          ]
+        },
+        "通行证状态": {
+          "default": "无",
+          "type": "string",
+          "enum": [
+            "合法",
+            "弱化",
+            "将尽",
+            "无"
+          ]
+        }
+      }
+    },
+    "藏锋": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前面孔": {
+          "default": "对外",
+          "type": "string",
+          "enum": [
+            "对外",
+            "对内",
+            "独处"
+          ]
+        },
+        "气运档位": {
+          "default": "充足",
+          "type": "string",
+          "enum": [
+            "充足",
+            "紧张",
+            "枯竭"
+          ]
+        },
+        "当前临时身份": {
+          "default": "",
+          "type": "string"
+        },
+        "当前着装": {
+          "default": "",
+          "type": "string"
+        }
+      }
+    },
+    "世界足迹": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "description": "小世界名"
+      },
+      "additionalProperties": {
+        "default": {},
+        "type": "object",
+        "properties": {
+          "声望": {
+            "default": "",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
