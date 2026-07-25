@@ -104,14 +104,16 @@ const footprintEntries = computed(() => {
   width: 100%;
   max-width: 720px;
   background-color: var(--c-surface);
-  border: 2px solid var(--c-accent);
-  border-radius: 6px;
+  background-image: linear-gradient(135deg, var(--c-surface) 0%, var(--c-bg) 100%);
+  border: 1px solid var(--c-accent);
+  border-radius: 8px;
   font-family: var(--font-body);
   color: var(--c-text);
   font-size: 13px;
   line-height: 1.5;
   margin: 0 auto;
-  padding: 10px 14px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 4px rgba(74, 138, 130, 0.08);
 }
 
 .world-row {
@@ -127,7 +129,7 @@ const footprintEntries = computed(() => {
   .world-name {
     color: var(--c-primary);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
   }
   .scene {
     color: var(--c-text-muted);
@@ -137,8 +139,8 @@ const footprintEntries = computed(() => {
 
 .divider {
   height: 1px;
-  background: var(--c-border);
-  margin: 8px 0;
+  background: linear-gradient(90deg, transparent, var(--c-border), transparent);
+  margin: 10px 0;
 }
 
 .section {
@@ -146,7 +148,22 @@ const footprintEntries = computed(() => {
     font-weight: 700;
     font-size: 12px;
     color: var(--c-accent-dark);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 12px;
+      background: var(--c-accent);
+      border-radius: 2px;
+    }
   }
 
   .badges-row {
@@ -169,7 +186,10 @@ const footprintEntries = computed(() => {
   .badge-warn { background: var(--c-warn); }
   .badge-danger { background: var(--c-danger); }
   .badge-info { background: var(--c-info); }
-  .badge-muted { background: var(--c-text-muted); }
+  .badge-muted {
+    background: var(--c-border);
+    color: var(--c-text-muted);
+  }
   .badge-accent { background: var(--c-accent); }
 
   .kv-line {
@@ -179,7 +199,7 @@ const footprintEntries = computed(() => {
 
     .kv-label {
       min-width: 56px;
-      color: var(--c-text-muted);
+      color: var(--c-accent-dark);
       font-size: 12px;
     }
     .kv-value {
@@ -192,20 +212,23 @@ const footprintEntries = computed(() => {
 .footprint-list {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
 }
 
 .footprint-item {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: rgba(184, 212, 207, 0.18);
 
   .fp-name {
     color: var(--c-primary);
     font-weight: 600;
   }
   .fp-fame {
-    color: var(--c-text-muted);
+    color: var(--c-accent-dark);
     font-style: italic;
   }
 }

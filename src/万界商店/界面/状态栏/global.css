@@ -5,19 +5,19 @@
 }
 
 :root {
-  /* 基底色：霜月清冷 + 行商暖金 */
-  --c-bg: #f4f1ea;
-  --c-surface: #ffffff;
-  --c-border: #d4cfc2;
-  --c-text: #2c2c2c;
-  --c-text-muted: #8a8478;
-  --c-primary: #5a6b8a;
-  --c-accent: #b8954a;
-  --c-accent-dark: #8a6d2b;
-  /* 状态语义色 */
-  --c-safe: #5a9a5a;
-  --c-warn: #c9a84c;
-  --c-danger: #b5544a;
-  --c-info: #7ab8e0;
+  /* 基底色：淡青为主 + 鎏金为辅 */
+  --c-bg: #eef4f3;
+  --c-surface: #f7fbfa;
+  --c-border: #b8d4cf;
+  --c-text: #1f3a36;
+  --c-text-muted: #5f827c;
+  --c-primary: #4a8a82;
+  --c-accent: #c8a14a;
+  --c-accent-dark: #9a7a2f;
+  /* 状态语义色（青系基调） */
+  --c-safe: #4a8a82;
+  --c-warn: #c8a14a;
+  --c-danger: #b57564;
+  --c-info: #6ab5ac;
   --font-body: 'Microsoft YaHei', 'PingFang SC', sans-serif;
 }
